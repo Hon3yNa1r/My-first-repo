@@ -1,0 +1,63 @@
+{
+	"info": {
+		"_postman_id": "a7d7019c-3fbe-4ffb-a840-690d76ef53f9",
+		"name": "Pokemon",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "765857-a7d7019c-3fbe-4ffb-a840-690d76ef53f9"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"id": "01b9da59-2d47-4a37-a499-7b453984ec5d",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://pokeapi.co/api/v2/pokemon/ditto",
+					"protocol": "https",
+					"host": [
+						"pokeapi",
+						"co"
+					],
+					"path": [
+						"api",
+						"v2",
+						"pokemon",
+						"ditto"
+					]
+				},
+				"description": "With this request you get the pokemon ditto"
+			},
+			"response": []
+		},
+		{
+			"name": "get pokemon",
+			"id": "d74cbcb7-e830-412d-ab18-2da10b682003",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://pokeapi.co/api/v2/pokemon",
+					"protocol": "https",
+					"host": [
+						"pokeapi",
+						"co"
+					],
+					"path": [
+						"api",
+						"v2",
+						"pokemon"
+					]
+				},
+				"description": "with this request you get the list of pokemons\n\nOKay I am adding some more lines to see how this looks in overview\n\nthis is another line\n\nand another one\n\nanother one\n\nanother one"
+			},
+			"response": []
+		}
+	]
+}
