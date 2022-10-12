@@ -1,10 +1,10 @@
-id = b10d7f1b-9514-40aa-8be4-8b7ca57ec3a9
+id = c3dc1282-cd61-492a-a573-ac60e3b5f960
 
 [relations]
 
 [relations.collections]
 rootDirectory = postman/collections
-files[] = {"id":"a7d7019c-3fbe-4ffb-a840-690d76ef53f9","path":"Pokemon_765857-a7d7019c-3fbe-4ffb-a840-690d76ef53f9.json","metaData":{}}
+files[] = {"id":"16039862-f67e7164-7986-4ecc-8993-ab418acdc177","path":"Pokemon_765857-a7d7019c-3fbe-4ffb-a840-690d76ef53f9.json","metaData":{}}
 
 [relations.collections.metaData]
 
@@ -12,3 +12,4 @@ files[] = {"id":"a7d7019c-3fbe-4ffb-a840-690d76ef53f9","path":"Pokemon_765857-a7
 rootDirectory = postman/schemas
 
 [relations.apiDefinition.metaData]
+type = openapi:3

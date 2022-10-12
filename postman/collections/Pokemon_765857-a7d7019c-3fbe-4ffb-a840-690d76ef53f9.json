@@ -1,14 +1,14 @@
 {
 	"info": {
-		"_postman_id": "a7d7019c-3fbe-4ffb-a840-690d76ef53f9",
+		"_postman_id": "f67e7164-7986-4ecc-8993-ab418acdc177",
 		"name": "Pokemon",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_uid": "765857-a7d7019c-3fbe-4ffb-a840-690d76ef53f9"
+		"_uid": "16039862-f67e7164-7986-4ecc-8993-ab418acdc177"
 	},
 	"item": [
 		{
 			"name": "New Request",
-			"id": "01b9da59-2d47-4a37-a499-7b453984ec5d",
+			"id": "0455fc2d-0ba8-4eb1-8e84-c5bd8a49b30f",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -35,7 +35,7 @@
 		},
 		{
 			"name": "get pokemon",
-			"id": "d74cbcb7-e830-412d-ab18-2da10b682003",
+			"id": "0aaf7d89-2eda-4246-b2ae-3af4694769f3",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
