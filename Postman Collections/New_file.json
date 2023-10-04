@@ -1,0 +1,178 @@
+{
+	"info": {
+		"_postman_id": "3c8cf936-2907-461c-8b04-bfb9bc8a68c5",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "New Folder",
+			"item": [
+				{
+					"name": "New Request",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Response status code is 200\", function () {",
+									"    pm.expect(pm.response.code).to.equal(200);",
+									"});",
+									"",
+									"",
+									"pm.test(\"Response has the required fields\", function () {",
+									"    const responseData = pm.response.json();",
+									"    ",
+									"    pm.expect(responseData).to.be.an('object');",
+									"    pm.expect(responseData).to.include.all.keys('args', 'headers', 'url');",
+									"});",
+									"",
+									"",
+									"pm.test(\"Headers contain all expected fields\", function () {",
+									"    const responseData = pm.response.json();",
+									"    ",
+									"    pm.expect(responseData.headers).to.be.an('object');",
+									"    pm.expect(responseData.headers).to.include.all.keys(",
+									"        'x-forwarded-proto',",
+									"        'x-forwarded-port',",
+									"        'host',",
+									"        'x-amzn-trace-id',",
+									"        'content-length',",
+									"        'user-agent',",
+									"        'accept',",
+									"        'cache-control',",
+									"        'postman-token',",
+									"        'accept-encoding'",
+									"    );",
+									"});",
+									"",
+									"",
+									"pm.test(\"URL is a non-empty string\", function () {",
+									"    const responseData = pm.response.json();",
+									"    ",
+									"    pm.expect(responseData).to.be.an('object');",
+									"    pm.expect(responseData.url).to.exist.and.to.be.a('string').and.to.have.lengthOf.at.least(1, \"Value should not be empty\");",
+									"});",
+									"",
+									"",
+									"pm.test(\"Response time is less than 200ms\", function () {",
+									"    pm.expect(pm.response.responseTime).to.be.below(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "aaf00ef4-24ca-4b14-b5c9-9ada78906ffd",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "https://postman-echo.com/get"
+					},
+					"response": [
+						{
+							"id": "a47ab3fc-8637-4601-af07-4ef379bfde0e",
+							"name": "New Request",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": "https://postman-echo.com/get"
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"responseTime": null,
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "https://postman-echo.com/get",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Response status code is 200\", function () {",
+									"  pm.response.to.have.status(200);",
+									"});",
+									"",
+									"",
+									"pm.test(\"Response has the required fields\", function () {",
+									"    const responseData = pm.response.json();",
+									"    ",
+									"    pm.expect(responseData).to.be.an('object');",
+									"    pm.expect(responseData.args).to.exist;",
+									"    pm.expect(responseData.headers).to.exist;",
+									"    pm.expect(responseData.url).to.exist;",
+									"});",
+									"",
+									"",
+									"pm.test(\"Headers contain the expected fields\", function () {",
+									"    const responseData = pm.response.json();",
+									"",
+									"    pm.expect(responseData.headers).to.exist.and.to.be.an('object');",
+									"    pm.expect(responseData.headers).to.have.all.keys(",
+									"        'x-forwarded-proto',",
+									"        'x-forwarded-port',",
+									"        'host',",
+									"        'x-amzn-trace-id',",
+									"        'content-length',",
+									"        'user-agent',",
+									"        'accept',",
+									"        'cache-control',",
+									"        'postman-token',",
+									"        'accept-encoding',",
+									"        'cookie'",
+									"    );",
+									"});",
+									"",
+									"",
+									"pm.test(\"URL is a non-empty string\", function() {",
+									"  const responseData = pm.response.json();",
+									"  ",
+									"  pm.expect(responseData.url).to.be.a('string').and.to.have.lengthOf.at.least(1, \"URL should not be empty\");",
+									"});",
+									"",
+									"",
+									"pm.test(\"Response time is in an acceptable range\", function () {",
+									"    pm.expect(pm.response.responseTime).to.be.below(1000);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "ac874128-21cc-465c-a9ed-9b06c22d6e98",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "https://postman-echo.com/get"
+					},
+					"response": []
+				},
+				{
+					"name": "https://e02afb7a-27c7-46f6-9e3d-82eb0bf893cc.mock.pstmn.io",
+					"id": "b6d8647a-5a7b-41e5-b233-a8c687433500",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "https://e02afb7a-27c7-46f6-9e3d-82eb0bf893cc.mock.pstmn.io"
+					},
+					"response": []
+				}
+			],
+			"id": "25511fc1-3db3-4d04-8cc4-9562947c0745",
+			"description": "added a folder to test"
+		}
+	]
+}
